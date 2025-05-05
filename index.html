@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Videochat</title>
+  <script defer src="app.js"></script>
+  <script defer src="signaling.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen space-y-4">
+  <h1 class="text-3xl font-bold">Video Chat</h1>
+
+  <div class="flex space-x-4">
+    <video id="localVideo" autoplay muted playsinline class="w-64 h-48 rounded shadow"></video>
+    <video id="remoteVideo" autoplay playsinline class="w-64 h-48 rounded shadow"></video>
+  </div>
+
+  <!-- Pulsanti -->
+  <div class="space-x-4">
+    <button id="startButton" class="px-4 py-2 bg-green-500 rounded hover:bg-green-600">Avvia</button>
+    <button id="toggleCameraButton" class="px-4 py-2 bg-yellow-500 rounded hover:bg-yellow-600">Camera Off</button>
+    <button id="hangupButton" class="px-4 py-2 bg-red-500 rounded hover:bg-red-600">Chiudi</button>
+  </div>
+</body>
+</html>
